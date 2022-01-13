@@ -1,0 +1,35 @@
+* {
+  transition: all 200ms ease-in-out;
+}
+
+.paragraph {
+  font-family: Verdana;
+  font-size: 12px;
+  padding-left: 50px;
+  white-space: nowrap;
+  width: 800px;
+  overflow: hidden;
+  animation: 2s typing steps(50, end) infinite;
+}
+
+.cursor {
+  width: 4px;
+  height: 40px;
+  background-color: lightcoral;
+  display: inline-block;
+  animation: 1s blinking infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
